@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximun.scale=1.0,minimun-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penthouse – Profesionales de la Limpieza</title>
+    <link rel="apple-touch-icon" sizes="180x90" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="40x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="30x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="bootstrap.min.css" rel="stylesheet" >
+    <link href="iconds.css" rel="stylesheet" >
+    <script src="bootstrap.bundle.min.js" ></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="height: 100vh;">
+   <div class="contenedor d-flex flex-column justify-content-space-between" style="height: 100%;width:100%;">
+    <nav class="navbar navbar-expand-lg"style="height:120px;width:100%;background:white">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar" id="navba">
+        <a class="logo" href="https://pent-house.com.co/"><img id="Logo" src="img/logo-pent-house.png" alt="logo-pent-house" ></a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="d-flex justify-content-center align-items-center" style="height: 100%;width:100%;color:#213E6E">
+      <div class="Calculate" >
+        <div class="formu">
+
+          <center>
+            <form>
+              <fieldset style="background:white; padding:0px">
+                <h5>CALCULA EL VALOR DE TU TARIFA DE LIMPIEZA</h5>
+                <div class="mb-2">
+                  <label class="fz3" for="disabledTextInput" class="form-label">Tamaño(m2)</label>
+                  <input type="number" id="disabledTextInput"style="color:#213E6E" class="form-control" >
+                </div>
+                <div class="mb-2">
+                  <label class="fz3" for="">Tipo</label>
+                  <select id="TIPE" type="number" class="form-select fz3" aria-label="Default select example" onchange="turistico(event)">
+                    <option selected>seleccionar</option>
+                    <option value="1">Oficina</option>
+                    <option value="2">Residencial</option>
+                    <option value="3">Turistico</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="fz3" for="">Frecuencia semanal</label>
+                  <select id="FS" class="form-select fz3" aria-label="Default select example">
+                    <option selected>seleccionar</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="6">Ocasional</option>
+                    <option value="7">Express</option>
+                  </select>
+                </div>
+                
+                  <button type="button" style="width: 90px;" class="btn-outline-green m-4 fz3" onclick="calcular()">Calcular</button>
+                  
+                  <p class="fz2" id="result">El valor estimado de una intervención de limpieza es:<br>  <span style='background-color:yellow ;'>$ 0</span></p>
+                  <p class="fz2" id="result1">El valor estimado de su limpieza mensual es: <br> <span style='background-color:yellow ;'>$ 0</span></p>
+
+              </fieldset>
+            </form>
+          </center>
+
+        </div>
+        
+  
+      </div>
+      
+     </header>
+     <nav>
+  
+     </nav>
+     <!-- Footer -->
+<div  class="text-center text-white" style="height: 160px;width:100%;opacity:1;position:relative">
+  <!-- Grid container -->
+  <div class="container footer" style="width:100%;">
+    <!-- Section: Social media -->
+    <section class="py-2 d-flex justify-content-center">
+      <!-- Facebook -->
+      <a class="btn-outline-green btn-floating m-1" style="width:40px" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Whatsapp -->
+      <a class="btn-outline-green btn-floating m-1" style="width:40px" href="https://api.whatsapp.com/send/?phone=573113236193&text=Hola+%2APenthouse%2A.+Necesito+más+información+sobre+Oficinas+https%3A%2F%2Fpent-house.co%2Foficinas&type=phone_number&app_absent=0" target="_blank" role="button"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn-outline-green btn-floating m-1" style="width:40px" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn-outline-green btn-floating m-1" style="width:40px" href="https://www.instagram.com/penthouse.pl/" target="_blank" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+    <!-- Section: Text -->
+    <section>
+      <p class="textofooter mb-0" style="color: #213E6E;">
+        PROFESIONALES DE LA LIMPIEZA.
+      </p>
+    </section>
+    <!-- Section: Text -->
+  <div class="text-center mb-2 mt-3" style="color: #213E6E;">
+    © Penthouse Service SAS.
+    
+  </div>
+
+  </div>
+  <!-- Grid container -->
+  <!-- Copyright -->
+  <!-- Copyright -->
+<div style="position: relative; width:100%;bottom:50px;">
+  <div class="wave1"></div>
+  <div class="wave2"></div>
+  <div class="wave3"></div>
+</div>
+<div style="width: 100%;position:absolute;bottom:0px;background:white;height:60px"></div>
+</div>
+<!-- Footer -->
+
+   </div>
+  <script src="funtions.js"></script> 
+</body>
+</html>
